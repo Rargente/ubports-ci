@@ -10,7 +10,7 @@ name: Build System Image for Ubports
 on: 
   push:
     branches:
-      - master
+      - testing
   release:
     types: [published]
 
