@@ -83,3 +83,9 @@ jobs:
       with:
         name: System image
         path: ${{env.ANDROID_ROOT}}/out/target/product/${{env.DEVICE}}/system.img
+
+    - name : Upload recovery image
+      uses: actions/upload-artifact@master
+      with:
+        name: Recovery image
+        path: ${{env.ANDROID_ROOT}}/out/target/product/${{env.DEVICE}}/recovery.img
