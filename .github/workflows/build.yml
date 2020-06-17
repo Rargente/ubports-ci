@@ -62,10 +62,8 @@ jobs:
     - name: Clone device spec source
       run: |
         source halium.env
-        git clone -b halium-7.1-ubports-vendor --single-branch https://github.com/Rargente/android_device_yu_garlic.git $ANDROID_ROOT/device/yu/garlic --depth=1
-        git clone https://github.com/ut-on-garlic/proprietary_vendor_yu.git $ANDROID_ROOT/vendor/yu --depth=1
-        git clone -b halium-7.1-ubports-ra https://github.com/Rargente/android_kernel_yu_msm8937.git $ANDROID_ROOT/kernel/yu/msm8937 --depth=1
-        git clone https://android.googlesource.com/platform/external/curl.git -b android-7.1.2_r37 $ANDROID_ROOT/external/libcurl --depth=1
+        cp yu_garlic.xml $ANDRIOD_ROOT/halium/devices/manifests/yu_garlic.xml
+        bash -x "$ANDROID_ROOT/halium/devices/setup $DEVICE"
 
     - name: Build HAL
       run: |
