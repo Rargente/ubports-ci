@@ -66,6 +66,7 @@ jobs:
         rm yu_garlic.xml
         wget https://raw.githubusercontent.com/Rargente/ubports-ci/testing/yu_garlic.xml
         cd $ANDROID_ROOT
+        sed -i 's/repo\ sync\ \-\-network\-only\ \-c/repo\ sync\ \-\-network\-only\ \-\-force\-sync\ \-c/g' halium/devices/setup
         ./halium/devices/setup $DEVICE
 
     - name: Build HAL
