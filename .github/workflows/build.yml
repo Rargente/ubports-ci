@@ -62,7 +62,7 @@ jobs:
     - name: Clone device spec source
       run: |
         source halium.env
-        cd $ANDRIOD_ROOT/halium/devices/manifests/
+        cd $ANDROID_ROOT/halium/devices/manifests/
         rm yu_garlic.xml
         wget https://raw.githubusercontent.com/Rargente/ubports-ci/testing/yu_garlic.xml
         cd $ANDROID_ROOT
