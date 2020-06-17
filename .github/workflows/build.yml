@@ -62,7 +62,8 @@ jobs:
     - name: Clone device spec source
       run: |
         source halium.env
-        cp yu_garlic.xml $ANDRIOD_ROOT/halium/devices/manifests/yu_garlic.xml
+        cd $ANDRIOD_ROOT/halium/devices/manifests/
+        wget https://raw.githubusercontent.com/Rargente/ubports-ci/testing/yu_garlic.xml
         bash -x "$ANDROID_ROOT/halium/devices/setup $DEVICE"
 
     - name: Build HAL
