@@ -16,9 +16,10 @@
 <!-- GStreamer Camera Fix Remote -->
     <remote name="peat" fetch="https://github.com/peat-psuwit" />
 
-<!-- GStreamer Camera Repo -->
+<!-- GStreamer Camera Repo 
     <remove-project path="halium/droidmedia" name="droidmedia" />
     <project path="halium/droidmedia" name="droidmedia" remote="peat" revision="fix-raw-data" />
+-->
 
 <!-- Remotes for Recovery to Work -->
     <remote name="beidl" fetch="https://github.com/fredldotme" />
