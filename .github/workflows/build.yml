@@ -64,7 +64,7 @@ jobs:
         source halium.env
         cd $ANDRIOD_ROOT/halium/devices/manifests/
         wget https://raw.githubusercontent.com/Rargente/ubports-ci/testing/yu_garlic.xml
-        bash -x "$ANDROID_ROOT/halium/devices/setup $DEVICE"
+        $ANDROID_ROOT/halium/devices/setup $DEVICE
 
     - name: Build HAL
       run: |
