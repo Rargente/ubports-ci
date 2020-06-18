@@ -13,18 +13,8 @@
     <project path="kernel/yu/msm8937" name="android_kernel_yu_msm8937" remote="ryana" />
     <project path="vendor/yu" name="proprietary_vendor_yu" remote="pbteja100" />
 
-<!-- GStreamer Camera Fix Remote -->
-    <remote name="peat" fetch="https://github.com/peat-psuwit" />
-
-<!-- GStreamer Camera Repo 
-    <remove-project path="halium/droidmedia" name="droidmedia" />
-    <project path="halium/droidmedia" name="droidmedia" remote="peat" revision="fix-raw-data" />
--->
-
 <!-- Remotes for Recovery to Work -->
     <remote name="beidl" fetch="https://github.com/fredldotme" />
-    <remote name="omni" fetch="https://github.com/omnirom" />
-    <remote name="ubp" fetch="https://github.com/ubports" />
     <remote name="tyg" fetch="https://github.com/tyg3rpro" />
 
 <!-- Recovery Repos -->
