@@ -10,7 +10,7 @@
     
     <!-- Device Repos -->    
     <project path="device/yu/garlic" name="android_device_yu_garlic" remote="ryana" revision="halium-7.1-ubports-vendor" />
-    <project path="kernel/yu/msm8937" name="android_kernel_yu_msm8937" remote="ryana" />
+    <project path="kernel/yu/msm8937" name="android_kernel_yu_msm8937" remote="ryana" revision="old-camera" />
     <project path="vendor/yu" name="proprietary_vendor_yu" remote="pbteja100" />
 
 <!-- Remotes for Recovery to Work -->
