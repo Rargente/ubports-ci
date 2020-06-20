@@ -65,6 +65,7 @@ jobs:
         cd $ANDROID_ROOT
         sed -i 's/repo\ sync\ \-\-network\-only\ \-c/repo\ sync\ \-\-network\-only\ \-\-force\-sync\ \-c/g' halium/devices/setup
         ./halium/devices/setup $DEVICE
+        sed -i '/camera.msm8937/d' $ANDROID_ROOT/vendor/yu/garlic/garlic-vendor.mk
 
     - name: Build HAL
       run: |
