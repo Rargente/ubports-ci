@@ -2,9 +2,6 @@
 source halium.env
 cd $ANDROID_ROOT
 
-# replace something
-sed -i 's/external\/selinux/external\/selinux external\/libcurl/g' build/core/main.mk
-
 source build/envsetup.sh
 export LC_ALL=C && export USE_NINJA=false && export USE_CCACHE=1 && export ALLOW_MISSING_DEPENDENCIES=true
 breakfast $DEVICE
